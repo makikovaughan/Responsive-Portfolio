@@ -77,17 +77,23 @@ nav {
 /* main content */
 section {
     clear: both;
-    overflow: auto;
+    /* overflow: auto; */
     width: 960px; 
+    height: 1000px;
     float: center;
     margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-color: #dddddd;
+    background-color: #ffffff;
 }
+
 
 /* About me, picture, and one paragraph are in this container */
 .container1 {
     clear: both;
-    overflow: auto;
+    /* overflow: auto; */
     background-color: #ffffff;
     margin: 0 auto;
     margin-top: 30px;
@@ -99,9 +105,9 @@ section {
 /* Container2 is the second box */
 .container2 {
     clear: both;
-    overflow: auto;
+    /* overflow: auto; */
     background-color: #ffffff;
-    width: 960px; 
+    /* width: 960px;  */
     margin: 0 auto;
     float: center;
     padding-left: 20px;
@@ -257,12 +263,14 @@ img.portfolio {
     section {
         float: left;
         width: 75%; 
+        height: 100%;
         margin-left: 20px;
         /* height: 800px; */
     }
 
     .container2 {
-        width: 100%;
+        width: 75%;
+        height: 100%;
         /* padding-bottom: 0px; */
     }
 
@@ -322,7 +330,7 @@ img.portfolio {
 
 
     .container2 {
-        width: 100%;
+        width: 90%;
         padding-bottom: 0px;
     }
 
@@ -344,11 +352,20 @@ img.portfolio {
     }
 
     .headernav {    
+        clear: both;
         width: 100%;
         height: 100%;
-        padding-left: 1000px;
+        padding-right: 40%;
+        padding-top: 60px;
     }
 
+    section {
+        width: 90%;
+    }
+
+    .container2{
+        width: 80%;
+    }
     #aboutme {
         width: 100%;
     }
@@ -361,7 +378,7 @@ img.portfolio {
         width: 100%;
     }
     .container2 {
-        width: 100%;
+        width: 85%;
     }
 
     div.centered {
@@ -412,7 +429,7 @@ img.portfolio {
         bottom: 0px;
         margin: 0 auto;
         float: center;
-        margin-top: 1500px;  
+        margin-top: 1800px;  
     }
 
 }
