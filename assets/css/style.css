@@ -382,43 +382,43 @@ img.portfolio {
     }
 
     div.centered {
-        left: 175px;
+        left: 155px;
         width: 250px;
     }
 
     div.centered#portfolio2 {
-        left: 155px;
+        left: 135px;
         width: 250px;
     }
 
     div.centered#portfolio4 {
-        left: 155px;
+        left: 135px;
         width: 250px;
     }
 
 
     img#portfolio1.portfolio {
-        padding-left: 50px;
+        padding-left: 30px;
     }
 
     img#portfolio2.portfolio {
         margin-top: 10px;
-        padding-left: 30px;
+        padding-left: 10px;
     }
 
     img#portfolio3.portfolio {
         margin-top: 10px;
-        padding-left: 50px;
+        padding-left: 30px;
     }
 
     img#portfolio4.portfolio {
         margin-top: 10px;
-        padding-left: 30px;
+        padding-left: 10px;
     }
 
     img#portfolio5.portfolio {
         margin-top: 10px;
-        padding-left: 50px;
+        padding-left: 30px;
         padding-bottom: 10px;
     }
 
