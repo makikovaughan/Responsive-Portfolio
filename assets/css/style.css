@@ -1,0 +1,426 @@
+* {
+    box-sizing: 1024px; 
+    text-align: left;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url("../images/gravel.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 32px;
+    margin: 0 auto;
+    color: #777777;
+    border: #dddddd;
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+/* Hover the text link*/
+a:hover {
+    background-color: #4aaaa5;
+    color: #cccccc;
+}
+
+
+/* Header Style Sheet */
+header {
+    margin: 0 auto;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    width: 100%; 
+}
+
+/* my name in the header */
+.headername {
+    position: relative;
+    left: 0px;
+    float: left;
+    margin: 0 auto;
+    top: 0px;
+    background-color: #4aaaa5;
+    color: white;
+    /* height: 50px;  */
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* Navigation in the header */
+nav {
+    position: relative;
+    float: right;
+    top:20px;
+    right:10px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+/* container in the div */
+.container {
+    /* clear: both;
+    overflow: auto; */
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 960px; 
+    height: 70px;
+    position: relative;
+    float: center;
+}
+
+/* main content */
+section {
+    clear: both;
+    overflow: auto;
+    width: 960px; 
+    float: center;
+    margin: 0 auto;
+    border-color: #dddddd;
+}
+
+/* About me, picture, and one paragraph are in this container */
+.container1 {
+    clear: both;
+    overflow: auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 30px;
+    float: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Container2 is the second box */
+.container2 {
+    clear: both;
+    overflow: auto;
+    background-color: #ffffff;
+    width: 960px; 
+    margin: 0 auto;
+    float: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+/* Footer */
+.container3 {
+    /* clear: both;
+    overflow: auto; */
+    background-color: #666666;
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+    width: 100%; 
+    margin: 0 auto;
+    float: center;
+    margin-top: 100px; 
+    border-top: 10px solid #4aaaa5;
+    padding-left: 50%;
+    padding-top: 5%;
+}
+
+
+/* About me line inside container1 */
+#aboutme {
+    text-align: left;
+    border-bottom: 3px solid #cccccc;
+    background-color: #ffffff;
+    color: #4aaaa5;
+    padding-bottom: 20px;
+} 
+
+/* My picture inside container1 */
+#bio-picture {
+    float: left;
+    width: 35%;
+    padding-right: 20px;
+}
+
+/* One paragraph inside container */
+#introduction{
+    float: left;
+    width: 50%;
+}
+
+/* Input the name and email address */
+input {
+    width: 90%;
+    margin-left: 0px;
+}
+
+/* Text area in contact.html */
+textarea {
+    width: 90%;
+    border-color: #cccccc;
+}
+
+/* Setup the size of submit button */
+.button {
+    font-size: 20px;
+    background-color: #4aaaa5;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+/* Change the button color when the mouse was hovered over */
+.button:hover{
+   background-color: #cccccc;
+   color: #4aaaa5; 
+}
+
+/* Do not clean the float before my portfolio icon */
+.portfolio-container {
+    float: left;
+}
+
+/* Clean the float before My Portfolio icon for the 2nd row */
+.portfolio-container-2 {
+    clear: both;
+    overflow: auto;
+    float: left;
+}
+
+img.portfolio {
+    height: 200px; 
+    width: 250px;
+}
+
+/* The first icon */
+.portfolio-container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* The 2nd icon */
+.portfolio-container2 {
+    position: relative;
+    left: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* the portfolio icon text alignment */
+.centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    background-color: #4aaaa5;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/* 980px*/
+@media screen and (max-width: 980px) {
+
+    /* Header Style Sheet */
+    header {
+        width: 100%; 
+        height: 70px;   
+    }
+
+
+    /* my name in the header */
+    .headername {
+        position: relative;
+        left: 10px;
+    }
+
+
+    /* Navigation in the header */
+    nav {
+        position: absolute;
+        right:35px;
+    }
+
+
+    /* container in the div */
+    .container {
+        width: 100%; 
+        left: 10px;
+    }
+
+    /* main content */
+    section {
+        float: left;
+        width: 75%; 
+        margin-left: 20px;
+        /* height: 800px; */
+    }
+
+    .container2 {
+        width: 100%;
+        /* padding-bottom: 0px; */
+    }
+
+    /* Footer */
+
+    footer {
+        position: relative;
+    }
+
+    /* Footer's container */
+    .container3 {
+        position: relative;
+        bottom: 0px;
+        margin: 0 auto;
+        float: center;
+        margin-top: 1200px; 
+    }
+
+}
+
+/* 768px */
+@media screen and (max-width: 768px) {
+
+    /* Header Style Sheet */
+    header {
+        width: 100%; 
+        height: 70px;   
+    }
+
+
+    /* my name in the header */
+    .headername {
+        position: relative;
+        left: 10px;
+    }
+
+
+    /* Navigation in the header */
+    nav {
+        position: absolute;
+        right:35px;
+    }
+
+
+    /* container in the div */
+    .container {
+        width: 100%; 
+        left: 10px;
+    }
+
+    /* main content */
+    section {
+        clear: both;
+        width: 90%; 
+        /* height: 800px;  */
+    }
+
+
+    .container2 {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+}
+
+/* 640px */
+@media screen and (max-width: 640px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .headername {
+        width: 100%;
+        padding-left: 100px;
+    }
+
+    .headernav {    
+        width: 100%;
+        height: 100%;
+        padding-left: 1000px;
+    }
+
+    #aboutme {
+        width: 100%;
+    }
+
+    #bio-picture {
+        width: 100%;
+    }
+
+    #bio-picture {
+        width: 100%;
+    }
+    .container2 {
+        width: 100%;
+    }
+
+    div.centered {
+        left: 175px;
+        width: 250px;
+    }
+
+    div.centered#portfolio2 {
+        left: 155px;
+        width: 250px;
+    }
+
+    div.centered#portfolio4 {
+        left: 155px;
+        width: 250px;
+    }
+
+
+    img#portfolio1.portfolio {
+        padding-left: 50px;
+    }
+
+    img#portfolio2.portfolio {
+        margin-top: 10px;
+        padding-left: 30px;
+    }
+
+    img#portfolio3.portfolio {
+        margin-top: 10px;
+        padding-left: 50px;
+    }
+
+    img#portfolio4.portfolio {
+        margin-top: 10px;
+        padding-left: 30px;
+    }
+
+    img#portfolio5.portfolio {
+        margin-top: 10px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
+
+    /* Footer's container */
+    .container3 {
+
+        position: relative;
+        bottom: 0px;
+        margin: 0 auto;
+        float: center;
+        margin-top: 1500px;  
+    }
+
+}
+
+/* clearfix is applied to the parent container to 'fix' the flow of the page */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
