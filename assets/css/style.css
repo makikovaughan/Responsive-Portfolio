@@ -128,6 +128,7 @@ section {
 }
 
 
+
 /* About me line inside container1 */
 #aboutme {
     text-align: left;
@@ -264,19 +265,49 @@ img.portfolio {
         /* height: 800px; */
     }
 
-    .container2 {
-        width: 75%;
-        height: 100%;
-        /* padding-bottom: 0px; */
+    /* Do not clean the float before my portfolio icon */
+    .portfolio-container {
+        float: left;
+    }
+
+    /* Clean the float before My Portfolio icon for the 2nd row */
+    .portfolio-container-2 {
+        clear: both;
+        overflow: auto;
+        float: left;
     }
 
     img.portfolio {
-        width: 50%;
+        height: 200px; 
+        width: 250px;
     }
 
-    .container2.p {
-        font-size: 15px;
+    /* The first icon */
+    .portfolio-container1 {
+        position: relative;
+        text-align: center;
+        color: white;
     }
+
+    /* The 2nd icon */
+    .portfolio-container2 {
+        position: relative;
+        left: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    /* the portfolio icon text alignment */
+    .centered {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        background-color: #4aaaa5;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
 
     /* Footer */
 
@@ -312,12 +343,6 @@ img.portfolio {
     }
 
 
-    /* Navigation in the header */
-    /* nav {
-        position: absolute;
-        right:35px;
-    } */
-
 
     /* container in the div */
     .container {
@@ -327,16 +352,79 @@ img.portfolio {
 
     /* main content */
     section {
+        float: left;
+        width: 75%; 
+        height: 100%;
+        margin-left: 20px;
+        /* height: 800px; */
+    }
+
+    /* Do not clean the float before my portfolio icon */
+    .portfolio-container {
+        float: left;
+    }
+
+    /* Clean the float before My Portfolio icon for the 2nd row */
+    .portfolio-container-2 {
         clear: both;
-        width: 90%; 
-        /* height: 800px;  */
+        overflow: auto;
+        float: left;
     }
 
-
-    .container2 {
-        width: 90%;
-        padding-bottom: 0px;
+    img.portfolio {
+        height: 150px; 
+        width: 200px;
     }
+
+    /* The first icon */
+    .portfolio-container1 {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    /* The 2nd icon */
+    .portfolio-container2 {
+        position: relative;
+        left: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    /* the portfolio icon text alignment */
+    .centered {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        background-color: #4aaaa5;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+        /* Footer */
+
+        footer {
+            position: relative;
+        }
+    
+        /* Footer's container */
+        .container3 {
+            position: relative;
+            bottom: 0px;
+            margin: 0 auto;
+            float: center;
+            margin-top: 1500px; 
+        }
+
+        .copyrightmessage {
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            background-color: #666666;
+            width: 100%;
+    
+        }
 
 }
 
