@@ -1,5 +1,5 @@
 * {
-    box-sizing: 1024px; 
+    box-sizing: border-box; 
     text-align: left;
 }
 
@@ -53,19 +53,18 @@ header {
 
 /* Navigation in the header */
 nav {
-    position: relative;
+    /* position: relative; */
     float: right;
-    top:20px;
-    right:10px;
+    padding-top: 20px;
+    /* top:20px; */
+    /* right:10px; */
     margin: 0 auto;
-    padding: 0 auto;
+    /* padding: 0 auto; */
 }
 
 
 /* container in the div */
 .container {
-    /* clear: both;
-    overflow: auto; */
     background-color: #ffffff;
     margin: 0 auto;
     width: 960px; 
@@ -77,7 +76,6 @@ nav {
 /* main content */
 section {
     clear: both;
-    /* overflow: auto; */
     width: 960px; 
     height: 1000px;
     float: center;
@@ -93,7 +91,6 @@ section {
 /* About me, picture, and one paragraph are in this container */
 .container1 {
     clear: both;
-    /* overflow: auto; */
     background-color: #ffffff;
     margin: 0 auto;
     margin-top: 30px;
@@ -105,9 +102,7 @@ section {
 /* Container2 is the second box */
 .container2 {
     clear: both;
-    /* overflow: auto; */
     background-color: #ffffff;
-    /* width: 960px;  */
     margin: 0 auto;
     float: center;
     padding-left: 20px;
@@ -116,10 +111,9 @@ section {
     padding-top: 10px;
 }
 
+
 /* Footer */
 .container3 {
-    /* clear: both;
-    overflow: auto; */
     background-color: #666666;
     text-align: center;
     color: #ffffff;
@@ -160,6 +154,7 @@ section {
 input {
     width: 90%;
     margin-left: 0px;
+    border-color: #cccccc;
 }
 
 /* Text area in contact.html */
@@ -228,7 +223,6 @@ img.portfolio {
 
 
 
-
 /* 980px*/
 @media screen and (max-width: 980px) {
 
@@ -241,22 +235,24 @@ img.portfolio {
 
     /* my name in the header */
     .headername {
-        position: relative;
-        left: 10px;
+        /* position: relative; */
+        left: 20px; 
     }
 
 
     /* Navigation in the header */
     nav {
-        position: absolute;
-        right:35px;
+
+        padding-right: 10%;
+        /* position: absolute;
+        right:35px; */
     }
 
 
     /* container in the div */
     .container {
         width: 100%; 
-        left: 10px;
+        /* left: 10px; */
     }
 
     /* main content */
@@ -272,6 +268,14 @@ img.portfolio {
         width: 75%;
         height: 100%;
         /* padding-bottom: 0px; */
+    }
+
+    img.portfolio {
+        width: 50%;
+    }
+
+    .container2.p {
+        font-size: 15px;
     }
 
     /* Footer */
@@ -309,16 +313,16 @@ img.portfolio {
 
 
     /* Navigation in the header */
-    nav {
+    /* nav {
         position: absolute;
         right:35px;
-    }
+    } */
 
 
     /* container in the div */
     .container {
         width: 100%; 
-        left: 10px;
+        /* left: 10px; */
     }
 
     /* main content */
@@ -348,19 +352,31 @@ img.portfolio {
 
     .headername {
         width: 100%;
-        padding-left: 100px;
+        left: 0;
     }
+
+
 
     .headernav {    
         clear: both;
         width: 100%;
         height: 100%;
-        padding-right: 40%;
-        padding-top: 60px;
+        text-align: center;
+    }
+
+    #myname {
+        text-align: center; 
+    }
+
+    nav {
+        padding-right: 0;
+        background-color: white;
+        width: 100%;
     }
 
     section {
         width: 90%;
+        height: 80%;
     }
 
     .container2{
@@ -374,62 +390,82 @@ img.portfolio {
         width: 100%;
     }
 
-    #bio-picture {
+    .container2 {
         width: 100%;
     }
-    .container2 {
-        width: 85%;
+
+    .portfolio-container {
+        clear: both;
+        float: left;
     }
 
+    .portfolio-container2 {
+        float: left;
+        text-align: center;
+        color: white;
+        right: 10%;
+    }
+
+    /* The 2nd icon */
+    .portfolio-container2 {
+    position: relative;
+    text-align: center;
+    color: white;
+    left: 0;
+}
+
+
     div.centered {
-        left: 155px;
-        width: 250px;
+        left: 50%;
     }
 
     div.centered#portfolio2 {
-        left: 135px;
-        width: 250px;
+        left: 50%;
     }
 
     div.centered#portfolio4 {
-        left: 135px;
-        width: 250px;
+        left: 50%;
     }
 
-
+    /* Portfolio1 Picture*/
     img#portfolio1.portfolio {
-        padding-left: 30px;
+        width: 100%;
     }
-
     img#portfolio2.portfolio {
-        margin-top: 10px;
-        padding-left: 10px;
+        width: 100%;
     }
 
     img#portfolio3.portfolio {
-        margin-top: 10px;
-        padding-left: 30px;
+        width: 100%;
     }
 
     img#portfolio4.portfolio {
-        margin-top: 10px;
-        padding-left: 10px;
+        width: 100%;
     }
 
     img#portfolio5.portfolio {
-        margin-top: 10px;
-        padding-left: 30px;
-        padding-bottom: 10px;
+        width: 100%;
     }
+
 
     /* Footer's container */
     .container3 {
 
         position: relative;
         bottom: 0px;
+        height: 50px;
         margin: 0 auto;
         float: center;
         margin-top: 1800px;  
+    }
+
+    .copyrightmessage {
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+        background-color: #666666;
+        width: 100%;
+
     }
 
 }
