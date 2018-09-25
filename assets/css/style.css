@@ -44,7 +44,6 @@ header {
     top: 0px;
     background-color: #4aaaa5;
     color: white;
-    /* height: 50px;  */
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
@@ -53,7 +52,6 @@ header {
 
 /* Navigation in the header */
 nav {
-    /* position: relative; */
     float: right;
     padding-top: 20px;
     /* top:20px; */
@@ -114,6 +112,7 @@ section {
 
 /* Footer */
 .container3 {
+    position: relative;
     background-color: #666666;
     text-align: center;
     color: #ffffff;
@@ -121,12 +120,20 @@ section {
     width: 100%; 
     margin: 0 auto;
     float: center;
-    margin-top: 100px; 
+    margin-top: 200px; 
     border-top: 10px solid #4aaaa5;
     padding-left: 50%;
     padding-top: 5%;
 }
 
+.copyrightmessage {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    background-color: #666666;
+    width: 50%;
+
+}
 
 
 /* About me line inside container1 */
@@ -227,6 +234,10 @@ img.portfolio {
 /* 980px*/
 @media screen and (max-width: 980px) {
 
+    body {
+         width: 100%;
+    }
+
     /* Header Style Sheet */
     header {
         width: 100%; 
@@ -236,7 +247,6 @@ img.portfolio {
 
     /* my name in the header */
     .headername {
-        /* position: relative; */
         left: 20px; 
     }
 
@@ -245,15 +255,12 @@ img.portfolio {
     nav {
 
         padding-right: 10%;
-        /* position: absolute;
-        right:35px; */
     }
 
 
     /* container in the div */
     .container {
         width: 100%; 
-        /* left: 10px; */
     }
 
     /* main content */
@@ -262,7 +269,6 @@ img.portfolio {
         width: 75%; 
         height: 100%;
         margin-left: 20px;
-        /* height: 800px; */
     }
 
     /* Do not clean the float before my portfolio icon */
@@ -324,10 +330,23 @@ img.portfolio {
         margin-top: 1200px; 
     }
 
+    .copyrightmessage {
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        background-color: #666666;
+        width: 50%;
+
+    }
+
 }
 
 /* 768px */
 @media screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+   }
 
     /* Header Style Sheet */
     header {
@@ -353,10 +372,8 @@ img.portfolio {
     /* main content */
     section {
         float: left;
-        width: 75%; 
+        width: 90%; 
         height: 100%;
-        margin-left: 20px;
-        /* height: 800px; */
     }
 
     /* Do not clean the float before my portfolio icon */
@@ -420,9 +437,9 @@ img.portfolio {
         .copyrightmessage {
             position: absolute;
             bottom: 0;
-            left: 40%;
+            left: 45%;
             background-color: #666666;
-            width: 100%;
+            width: 50%;
     
         }
 
@@ -432,6 +449,7 @@ img.portfolio {
 @media screen and (max-width: 640px) {
     body {
         width: 100%;
+        background-color: #ffffff;
     }
 
     .container {
@@ -554,9 +572,9 @@ img.portfolio {
     .copyrightmessage {
         position: absolute;
         bottom: 0;
-        left: 40%;
+        left: 45%;
         background-color: #666666;
-        width: 100%;
+        width: 50%;
 
     }
 
