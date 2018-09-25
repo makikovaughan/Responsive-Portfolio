@@ -485,13 +485,17 @@ img.portfolio {
     .portfolio-container {
         clear: both;
         float: left;
+        width: 75%;
+        padding-left: 30%;
     }
 
-    .portfolio-container2 {
+    .portfolio-container-2 {
         float: left;
         text-align: center;
         color: white;
         right: 10%;
+        width: 75%;
+        padding-left: 30%;
     }
 
     /* The 2nd icon */
