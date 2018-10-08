@@ -178,13 +178,37 @@ textarea {
     cursor: pointer;
     border: none;
     color: white;
+
+    /* Make the button animation when it is hovered */
+    animation: buttonAnimation 5s infinite paused;
 }
+
 
 /* Change the button color when the mouse was hovered over */
 .button:hover{
-   background-color: #cccccc;
-   color: #4aaaa5; 
+   animation-play-state: running;
 }
+
+/* Button color changes in 5 seconds */
+@keyframes buttonAnimation {
+
+    0% {
+        background-color: #4aaaa5;
+        color: white;
+    }
+
+    50% {
+        background-color: #4aaa4f;
+        color: white;
+    }
+
+    100% {
+        background-color: #aa4aa2;
+        color: white;
+    }
+}
+
+
 
 /* Do not clean the float before my portfolio icon */
 .portfolio-container {
