@@ -24,6 +24,10 @@ a:hover {
     color: #cccccc;
 }
 
+#portfolio, #portfolio2 {
+    color: white;
+}
+
 
 /* Header Style Sheet */
 header {
